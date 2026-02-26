@@ -43,6 +43,10 @@ main {
   display: grid;
   gap: var(--spacing-400);
   padding: 4.5625rem 2.1875rem;
+
+  @media (min-width: 40.625rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -98,6 +102,10 @@ main {
 .card--daniel {
   background-color: var(--color-purple-500);
   color: var(--color-white);
+
+  @media (min-width: 40.625rem) {
+    grid-column: span 2;
+  }
 }
 
 .card--daniel .card__profile-title,
@@ -135,6 +143,10 @@ main {
 .card--patrick {
   background-color: var(--color-dark-blue);
   color: var(--color-white);
+
+  @media (min-width: 40.625rem) {
+    grid-column: span 2;
+  }
 }
 
 .card--patrick .card__profile-title {
@@ -152,6 +164,10 @@ main {
 .card--kira {
   background-color: var(--color-white);
   color: var(--color-grey-500);
+
+  @media (min-width: 40.625rem) {
+    grid-column: span 2;
+  }
 }
 
 .card--kira .card__profile-title {
