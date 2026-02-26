@@ -16,12 +16,12 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
 
-  --spacing-500: 2.5rem;
-  --spacing-400: 2rem;
-  --spacing-300: 1.5rem;
-  --spacing-200: 1rem;
-  --spacing-100: 0.5rem;
-  --spacing-50: 0.25rem;
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-50: 0.25rem; /* 4px */
 }
 
 *,
@@ -34,7 +34,31 @@
 
 body {
   font-family: var(--font-family);
-  font-size: 0.8125rem;
+  font-size: 0.8125rem; /* 13px */
   font-weight: var(--font-weight-medium);
   background-color: var(--color-background);
+}
+
+main {
+  display: grid;
+  gap: var(--spacing-400);
+  padding: 4.5625rem 2.1875rem;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.card {
+  display: grid;
+  gap: var(--spacing-200);
+  padding: var(--spacing-400);
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px rgb(72 85 106 / 24.74%);
 }
