@@ -62,3 +62,102 @@ main {
   border-radius: 8px;
   box-shadow: 40px 60px 50px -47px rgb(72 85 106 / 24.74%);
 }
+
+.card__profile {
+  display: flex;
+  gap: 1.0625rem;
+}
+
+.card__profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-50);
+  line-height: 1.1;
+}
+
+.card__profile > img {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+}
+
+.card__profile-title {
+  font-size: 0.6875rem; /* 11px */
+}
+
+.card__title {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.2;
+  font-weight: var(--font-weight-semibold);
+}
+
+.card__body {
+  line-height: 1.4;
+}
+
+.card--daniel {
+  background-color: var(--color-purple-500);
+  color: var(--color-white);
+}
+
+.card--daniel .card__profile-title,
+.card--daniel .card__body {
+  color: var(--color-purple-50);
+}
+
+.card--daniel img {
+  border: 2px solid var(--color-purple-300);
+}
+
+.card--jonathan {
+  background-color: var(--color-grey-500);
+  color: var(--color-white);
+}
+
+.card--jonathan .card__profile-title {
+  color: var(--color-grey-200);
+}
+
+.card--jonathan .card__body {
+  color: var(--color-grey-100);
+}
+
+.card--jeanette {
+  background-color: var(--color-white);
+  color: var(--color-grey-500);
+}
+
+.card--jeanette .card__profile-title,
+.card--jeanette .card__body {
+  color: var(--color-grey-400);
+}
+
+.card--patrick {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.card--patrick .card__profile-title {
+  color: var(--color-grey-200);
+}
+
+.card--patrick .card__body {
+  color: var(--color-grey-100);
+}
+
+.card--patrick img {
+  border: 2px solid var(--color-purple-500);
+}
+
+.card--kira {
+  background-color: var(--color-white);
+  color: var(--color-grey-500);
+}
+
+.card--kira .card__profile-title {
+  color: var(--color-grey-200);
+}
+
+.card--kira .card__body {
+  color: var(--color-grey-400);
+}
