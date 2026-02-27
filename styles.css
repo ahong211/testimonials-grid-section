@@ -37,6 +37,12 @@ body {
   font-size: 0.8125rem; /* 13px */
   font-weight: var(--font-weight-medium);
   background-color: var(--color-background);
+
+  @media (min-width: 67.125rem) {
+    min-height: 100vh;
+    display: grid;
+    padding: 0 3.75rem;
+  }
 }
 
 main {
@@ -47,6 +53,14 @@ main {
   @media (min-width: 40.625rem) {
     grid-template-columns: repeat(2, 1fr);
     padding: 5.1875rem 3.75rem 7.0625rem;
+  }
+
+  @media (min-width: 67.125rem) {
+    max-width: 69.625rem;
+    margin-inline: auto;
+    margin-block: auto;
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -110,6 +124,10 @@ main {
     background-repeat: no-repeat;
     background-position: top right 30%;
   }
+
+  @media (min-width: 67.125rem) {
+    background-position: top right 14%;
+  }
 }
 
 .card--daniel .card__profile-title,
@@ -171,6 +189,11 @@ main {
 
   @media (min-width: 40.625rem) {
     grid-column: span 2;
+  }
+
+  @media (min-width: 67.125rem) {
+    grid-column: 4;
+    grid-row: 1 / span 2;
   }
 }
 
